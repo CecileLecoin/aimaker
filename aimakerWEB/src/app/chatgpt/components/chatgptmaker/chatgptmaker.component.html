@@ -1,0 +1,12 @@
+<div *ngIf="dataLoaded">
+<h1>My first HTML</h1>
+
+
+<span>{{firstwebsite$ | async}}</span>
+
+
+    <!-- Your component's content here -->
+  </div>
+  <div *ngIf="!dataLoaded">
+    Loading...
+  </div>

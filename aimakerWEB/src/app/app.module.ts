@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { ChatgptModule } from './chatgpt/chatgpt.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [
     provideClientHydration(withEventReplay()),
